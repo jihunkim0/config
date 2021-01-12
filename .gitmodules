@@ -1,0 +1,66 @@
+[submodule "neovim/.config/nvim/pack/plugins/start/completion-nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/completion-nvim
+	url = https://github.com/nvim-lua/completion-nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/gruvbox"]
+	path = neovim/.config/nvim/pack/plugins/opt/gruvbox
+	url = https://github.com/gruvbox-community/gruvbox.git
+[submodule "neovim/.config/nvim/pack/plugins/start/nlua.nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/nlua.nvim
+	url = https://github.com/tjdevries/nlua.nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/nvim-colorizer.lua"]
+	path = neovim/.config/nvim/pack/plugins/opt/nvim-colorizer.lua
+	url = https://github.com/norcalli/nvim-colorizer.lua.git
+[submodule "neovim/.config/nvim/pack/plugins/start/nvim-lspconfig"]
+	path = neovim/.config/nvim/pack/plugins/opt/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "neovim/.config/nvim/pack/plugins/start/nvim-treesitter"]
+	path = neovim/.config/nvim/pack/plugins/opt/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "neovim/.config/nvim/pack/plugins/start/nvim-web-devicons"]
+	path = neovim/.config/nvim/pack/plugins/opt/nvim-web-devicons
+	url = https://github.com/kyazdani42/nvim-web-devicons.git
+[submodule "neovim/.config/nvim/pack/plugins/start/plenary.nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/telescope.nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/lsp-status.nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/lsp-status.nvim
+	url = https://github.com/nvim-lua/lsp-status.nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/popup.nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/popup.nvim
+	url = https://github.com/nvim-lua/popup.nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/formatter.nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/formatter.nvim
+	url = https://github.com/mhartington/formatter.nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/nvim-bufferline.lua"]
+	path = neovim/.config/nvim/pack/plugins/opt/nvim-bufferline.lua
+	url = https://github.com/akinsho/nvim-bufferline.lua.git
+[submodule "neovim/.config/nvim/pack/plugins/start/papercolor-theme"]
+	path = neovim/.config/nvim/pack/plugins/opt/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme.git
+[submodule "neovim/.config/nvim/pack/plugins/start/cheat.sh-vim"]
+	path = neovim/.config/nvim/pack/plugins/opt/cheat.sh-vim
+	url = https://gitlab.com/dbeniamine/cheat.sh-vim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/lightline.vim"]
+	path = neovim/.config/nvim/pack/plugins/opt/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/ayu-vim"]
+	path = neovim/.config/nvim/pack/plugins/opt/ayu-vim
+	url = https://github.com/ayu-theme/ayu-vim.git
+[submodule "neovim/.config/nvim/pack/plugins/start/undotree"]
+	path = neovim/.config/nvim/pack/plugins/opt/undotree
+	url = https://github.com/mbbill/undotree.git
+[submodule "neovim/.config/nvim/pack/plugins/start/vim-illuminate"]
+	path = neovim/.config/nvim/pack/plugins/opt/vim-illuminate
+	url = https://github.com/RRethy/vim-illuminate.git
+[submodule "neovim/.config/nvim/pack/plugins/start/vim-fugitive"]
+	path = neovim/.config/nvim/pack/plugins/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "neovim/.config/nvim/pack/plugins/start/vimspector"]
+	path = neovim/.config/nvim/pack/plugins/start/vimspector
+	url = https://github.com/puremourning/vimspector.git
+[submodule "neovim/.config/nvim/pack/plugins/opt/pylance.nvim"]
+	path = neovim/.config/nvim/pack/plugins/opt/pylance.nvim
+	url = https://github.com/aca/pylance.nvim.git
