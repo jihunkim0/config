@@ -2,7 +2,7 @@ local lspconfig = require "lspconfig"
 local configs = require "lspconfig/configs"
 local completion = require "completion"
 local status = require "lsp-status"
-local illuminate = require "illuminate"
+--local illuminate = require "illuminate"
 local utils = require "utils"
 
 status.config = {
@@ -14,7 +14,7 @@ status.register_progress()
 local on_attach = function(client)
   completion.on_attach(client)
   status.on_attach(client)
-  illuminate.on_attach(client)
+  --illuminate.on_attach(client)
 
 
   local opts = {noremap = true, silent = true}
@@ -66,6 +66,7 @@ local servers = {
   vimls = {},
   tsserver = {},
   jsonls = {},
+  yamlls = {},
   --jedi_language_server = {},
   html = {
     filetypes = {"html", "jinja"}
