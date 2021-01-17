@@ -2,7 +2,7 @@
 vim.cmd("packadd ayu-vim")
 vim.cmd("packadd cheat.sh-vim")
 vim.cmd("packadd completion-nvim")
-vim.cmd("packadd formatter.nvim")
+--vim.cmd("packadd formatter.nvim")
 vim.cmd("packadd gruvbox")
 vim.cmd("packadd lightline.vim")
 vim.cmd("packadd lsp-status.nvim")

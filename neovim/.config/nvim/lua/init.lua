@@ -17,6 +17,7 @@ else
   require('_telescope')
   require('_devicons')
   require('_lightline')
+  require('_formatter')
 
   --require('jihun/statusline')
   --require('_status')
