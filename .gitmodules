@@ -64,3 +64,6 @@
 [submodule "neovim/.config/nvim/pack/plugins/opt/pylance.nvim"]
 	path = neovim/.config/nvim/pack/plugins/opt/pylance.nvim
 	url = https://github.com/aca/pylance.nvim.git
+[submodule "neovim/.config/nvim/pack/plugins/opt/vim-closetag"]
+	path = neovim/.config/nvim/pack/plugins/opt/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
