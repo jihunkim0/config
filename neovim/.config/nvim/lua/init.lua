@@ -22,4 +22,5 @@ else
   require("_lightline")
   require("_formatter")
   require("_closetag")
+  require("_emmet")
 end

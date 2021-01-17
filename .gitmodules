@@ -70,3 +70,6 @@
 [submodule "neovim/.config/nvim/pack/plugins/opt/auto-pairs"]
 	path = neovim/.config/nvim/pack/plugins/opt/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "neovim/.config/nvim/pack/plugins/opt/emmet-vim"]
+	path = neovim/.config/nvim/pack/plugins/opt/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
