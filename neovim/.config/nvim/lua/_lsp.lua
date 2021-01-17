@@ -4,6 +4,7 @@ local completion = require "completion"
 local status = require "lsp-status"
 --local illuminate = require "illuminate"
 local utils = require "utils"
+local util = require('lspconfig/util')
 
 status.config = {
   kind_labels = vim.g.completion_customize_lsp_label
@@ -11,22 +12,29 @@ status.config = {
 
 status.register_progress()
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 local on_attach = function(client)
   completion.on_attach(client)
   status.on_attach(client)
   --illuminate.on_attach(client)
 
-
   local opts = {noremap = true, silent = true}
 
-  utils.map("n", "<leader>vd", "<cmd> lua vim.lsp.buf.definition()<CR>", {noremap=true})
-  utils.map("n", "<leader>vi", "<cmd> lua vim.lsp.buf.implementation()<CR>", {noremap=true})
-  utils.map("n", "<leader>vsh", "<cmd> lua vim.lsp.buf.signature_help()<CR>", {noremap=true})
-  utils.map("n", "<leader>vrr", "<cmd> lua vim.lsp.buf.references()<CR>", {noremap=true})
-  utils.map("n", "<leader>vrn", "<cmd> lua vim.lsp.buf.rename()<CR>", {noremap=true})
-  utils.map("n", "<leader>vh", "<cmd> lua vim.lsp.buf.hover()<CR>", {noremap=true})
-  utils.map("n", "<leader>vca", "<cmd> lua vim.lsp.buf.code_action()<CR>", {noremap=true})
-  utils.map("n", "<leader>vsd", "<cmd> lua vim.lsp.util.show_line_diagnostics(); vim.lsp.util.show_line_diagnostics()<CR>", {noremap=true})
+  utils.map("n", "<leader>vd", "<cmd> lua vim.lsp.buf.definition()<CR>", {noremap = true})
+  utils.map("n", "<leader>vi", "<cmd> lua vim.lsp.buf.implementation()<CR>", {noremap = true})
+  utils.map("n", "<leader>vsh", "<cmd> lua vim.lsp.buf.signature_help()<CR>", {noremap = true})
+  utils.map("n", "<leader>vrr", "<cmd> lua vim.lsp.buf.references()<CR>", {noremap = true})
+  utils.map("n", "<leader>vrn", "<cmd> lua vim.lsp.buf.rename()<CR>", {noremap = true})
+  utils.map("n", "<leader>vh", "<cmd> lua vim.lsp.buf.hover()<CR>", {noremap = true})
+  utils.map("n", "<leader>vca", "<cmd> lua vim.lsp.buf.code_action()<CR>", {noremap = true})
+  utils.map(
+    "n",
+    "<leader>vsd",
+    "<cmd> lua vim.lsp.util.show_line_diagnostics(); vim.lsp.util.show_line_diagnostics()<CR>",
+    {noremap = true}
+  )
 
   --utils.map("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)", opts)
   --utils.map("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
@@ -64,25 +72,29 @@ require("nlua.lsp.nvim").setup(
 
 local servers = {
   vimls = {},
-  tsserver = {},
+  tsserver = {
+    root_dir = function(fname)
+      return util.find_git_ancestor(fname) or util.path.dirname(fname)
+    end
+  },
   jsonls = {},
   yamlls = {},
   --jedi_language_server = {},
   html = {
     filetypes = {"html", "jinja"}
   },
-  pylance={
-    settings={
-      python={
-        analysis={
-          typeCheckingMode="off"
+  pylance = {
+    settings = {
+      python = {
+        analysis = {
+          typeCheckingMode = "off"
         }
       }
     }
-  },
+  }
 }
 
-require('pylance')
+require("pylance")
 for server, config in pairs(servers) do
-  lspconfig[server].setup(vim.tbl_deep_extend("force", {on_attach = on_attach}, config))
+  lspconfig[server].setup(vim.tbl_deep_extend("force", {on_attach = on_attach, capabilities = capabilities}, config))
 end

@@ -50,4 +50,13 @@ require("formatter").setup(
   }
 )
 
+vim.api.nvim_exec(
+  [[
+augroup FormatAutoGroup
+autocmd!
+autocmd BufWritePost *.js,*.lua,*.html FormatWrite
+augroup END
+]],
+  true
+)
 --map("n", ",f", [[:Format<CR>]], {noremap = true, silent = true})
