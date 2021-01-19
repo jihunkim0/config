@@ -1,0 +1,18 @@
+name: 'shades_of_purple'
+version: '1.0.0'
+license: 'MIT'
+author: 'Alexander Keliris'
+url: ''
+description: ''
+colorschemes:
+  - name: shades_of_purple
+    background: 'dark'
+    palette: shades_of_purple
+airline:
+  - name: shades_of_purple 
+    palette: shades_of_purple
+    style: shades_of_purple
+lightline:
+  - name: shades_of_purple
+    palette: shades_of_purple 
+    style: shades_of_purple

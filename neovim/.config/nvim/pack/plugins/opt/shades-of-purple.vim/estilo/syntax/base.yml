@@ -1,0 +1,82 @@
+# BASE UI
+ColorColumn: "- backgroundDark"
+Conceal: ""
+Cursor: "- contrast"
+CursorIM: ""
+CursorColumn: "- backgroundDark"
+CursorLine: "- backgroundDark"
+Directory: ""
+DiffAdd: "diffAdded"
+DiffChange: "keywords"
+DiffDelete: "diffRemoved"
+DiffText: "white"
+ErrorMsg: "invalid - u"
+VertSplit: "foreground gutter"
+Folded: "foreground backgroundDark"
+FoldColumn: ""
+SignColumn: "foreground gutter"
+LineNr: "foreground gutter"
+CursorLineNr: "white gutter"
+MatchParen: "background contrastLiteII"
+ModeMsg: ""
+MoreMsg: ""
+NonText: "foreground"
+Normal: "white background"
+PMenu: "foreground menuBackground"
+PMenuSel: "other background"
+PmenuSbar: ""
+PmenuThumb: ""
+Question: ""
+Search: "- selectionBackground"
+IncSearch: "backgroundDark searchHighlight"
+SpecialKey: ""
+SpellBad: "constants"
+SpellLocal: ""
+SpellCap: ""
+SpellRare: ""
+StatusLine: "foreground background"
+StatusLineNC: "foreground backgroundDark"
+TabLine: "foreground gutter"
+TabLineFill: "gutter"
+TabLineSel: "backgroundDark foreground"
+Title: "other"
+Visual: "- selectionBackground"
+VisualNOS: ""
+WarningMsg: "contrast"
+WildMenu: "- backgroundDark"
+# BASE SYNTAX
+Comment: "comment"
+Constant: "constants"
+String: "strings" # Constant
+Character: "" # Constant
+Boolean: "" # Constant
+Number: "" # Constant
+Float: "" # Constant
+Identifier: "keywords"
+Function: "keywords" # Identifier
+Statement: ""
+Conditional: "keywords" # Statement
+Repeat: "" # Statement
+Label: "" # Statement
+Operator: "keywords ." # Statement
+Keyword: "" # Statement
+Exception: "" # Statement
+PreProc: ""
+Include: "" # PreProc
+Define: "" # PreProc
+Macro: "" # PreProc
+PreCondit: "" # PreProc
+Type: "objectKeys ."
+StorageClass: "keywords ." # Type
+Structure: "contrastLite" # Type
+Typedef: "" # Type
+Special: "other"
+SpecialChar: "" # Special
+Tag: "" # Special
+Delimiter: "" # Special
+SpecialComment: "" # Special
+Debug: "" # Special
+Underlined: "grey - u"
+Ignore: ""
+Error: "invalid - u"
+Todo: "highlight"

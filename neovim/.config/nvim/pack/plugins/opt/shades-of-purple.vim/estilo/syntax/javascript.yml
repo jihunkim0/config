@@ -1,0 +1,90 @@
+# Javascript - pangloss/vim-javascript
+jsVariableDef: 'other'
+jsStorageClass: 'keywords'
+jsExtendsKeyword: 'keywords'
+jsTemplateString: 'templates'
+jsFuncCall: 'contrast'
+jsReturn: 'keywords'
+jsTryCatchBlock: 'keywords'
+jsBlock: 'other'
+jsSpecial: 'contrastLite'
+jsTemplateExpression: 'other'
+jsAsyncKeyword: 'constants'
+jsForAwait: 'constants'
+jsGlobalNodeObjects: 'other'
+# Modules 
+jsImport: 'keywords'
+jsFrom: 'keywords'
+jsModuleAs: 'keywords'
+jsModuleKeyword: 'other'
+jsModuleAsterisk: 'invalid'
+jsExport: 'keywords'
+jsExportDefault: 'keywords'
+# Classes
+jsClassFuncName: 'contrast'
+jsClassKeyword: 'keywords'
+jsClassProperty: 'white'
+jsThis: 'definitions'
+jsClassDefinition: 'definitions'
+jsClassMethodType: 'keywords'
+# Objects
+jsObjectKey: 'objectKeys'
+jsFunctionKey: 'contrast'
+jsObjectMethodType: 'contrast'
+jsArrowFunction: 'contrast'
+jsRestExpression: 'keywords'
+jsObjectProp: 'contrastLite'
+# Flow 
+jsFlowDefinition: 'contrast'
+jsFlowArgumentDef: 'contrast'
+jsFlowType: 'objectKeys'
+jsFlowObject: 'white'
+jsFlowTypeStatement: 'contrast'
+jsFlowMaybe: 'keywords'
+jsFlowReturn: 'contrast'
+# Functions 
+jsFuncArgs: 'white'
+jsFuncName: 'contrast'
+jsFunction: 'definitions'
+jsGenerator: 'other'
+jsStatement: 'keywords'
+
+# Builtin styles
+javaScriptComment: '' # Comment
+javaScriptLineComment: '' # Comment
+javaScriptCommentTodo: '' # Todo
+javaScriptSpecial: '' # Special
+javaScriptStringS: '' # String
+javaScriptStringD: '' # String
+javaScriptCharacter: 'other' # Character
+javaScriptSpecialCharacter: '' # javaScriptSpecial
+javaScriptNumber: '' # javaScriptValue
+javaScriptConditional: '' # Conditional
+javaScriptRepeat: '' # Repeat
+javaScriptBranch: '' # Conditional
+javaScriptOperator: 'keywords' # Operator
+javaScriptType: 'objectKeys' # Type
+javaScriptStatement: 'keywords' # Statement
+javaScriptFunction: '' # Function
+javaScriptBraces: '' # Function
+javaScriptError: 'invalid' # Error
+javaScriptParensError: 'invalid' # Error
+javaScriptNull: 'constants' # Keyword
+javaScriptBoolean: 'constants' # Boolean
+javaScriptRegexpString: 'white' # String
+javaScriptIdentifier: 'other' # Identifier
+javaScriptLabel: 'other' # Label
+javaScriptException: 'invalid' # Exception
+javaScriptMessage: '' # Keyword
+javaScriptGlobal: '' # Keyword
+javaScriptMember: 'contrastLite' # Keyword
+javaScriptDeprecated: '' # Exception
+javaScriptReserved: '' # Keyword
+javaScriptDebug: '' # Debug
+javaScriptConstant: '' # Label
+
+# JSX highlighting
+xmlAttrib: 'contrast'
+xmlEndTag: 'objectKeys'
+xmlTag: 'objectKeys'
+xmlTagName: 'objectKeys'
