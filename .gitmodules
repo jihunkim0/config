@@ -76,3 +76,6 @@
 [submodule "neovim/.config/nvim/pack/plugins/opt/vim-surround"]
 	path = neovim/.config/nvim/pack/plugins/opt/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "neovim/.config/nvim/pack/plugins/opt/lexima.vim"]
+	path = neovim/.config/nvim/pack/plugins/opt/lexima.vim
+	url = https://github.com/cohama/lexima.vim.git
