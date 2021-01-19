@@ -79,3 +79,6 @@
 [submodule "neovim/.config/nvim/pack/plugins/opt/lexima.vim"]
 	path = neovim/.config/nvim/pack/plugins/opt/lexima.vim
 	url = https://github.com/cohama/lexima.vim.git
+[submodule "neovim/.config/nvim/pack/plugins/opt/vim-commentary"]
+	path = neovim/.config/nvim/pack/plugins/opt/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
