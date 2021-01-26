@@ -11,6 +11,7 @@ end
 
 g.mapleader = " "
 g.netrw_browse_split = 2
+g.netrw_liststyle = 3
 g.netrw_banner = 0
 g.netrw_winsize = 25
 g.netrw_localrmdir = "rm -r"
