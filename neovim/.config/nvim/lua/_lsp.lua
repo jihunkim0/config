@@ -22,6 +22,8 @@ local on_attach = function(client)
 
   local opts = {noremap = true, silent = true}
 
+  utils.map("i", "<c-space>", "<cmd> lua vim.lsp.buf.completion()<CR>", {noremap = true})
+
   utils.map("n", "<leader>vd", "<cmd> lua vim.lsp.buf.definition()<CR>", {noremap = true})
   utils.map("n", "<leader>vi", "<cmd> lua vim.lsp.buf.implementation()<CR>", {noremap = true})
   utils.map("n", "<leader>vsh", "<cmd> lua vim.lsp.buf.signature_help()<CR>", {noremap = true})
